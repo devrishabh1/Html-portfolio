@@ -1,37 +1,248 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Rishabh's Portfolio</h1>
-    <h2>I am a Web developer</h2>
-    <hr/>
-    <a href="./public/movie-ranking.html">movie-ranking project</a><br/>
-     <img src="./assets/images/movie-ranking.png" alt="Movie project image" height="200"/><br/>
-     <a href="./public/birthday-invite.html">Birthday-invite project</a><br/>
-     <img src="./assets/images/Birthday-invite.png" alt="Birthday-invite" height="200"/>
-     <hr/>
-     <a href="./public/about.html">About me</a>
-     <a href="./public/contact.html">Contact me</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's best university</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis
+          ex accusantium voluptas deserunt exercitationem doloribus error ab
+          totam! Quis asperiores voluptate corporis quia, voluptates neque,<br />
+          error possimus a vel aliquid dolor dolorum libero placeat eveniet
+          repellendus eius quidem fugit quod reiciendis sit nostrum, facilis
+          commodi ducimus. Quae, ullam alias.
+        </p>
+        <a href="" class="hero-btn">Visit us to know More</a>
+      </div>
+    </section>
 
+    <!---------Course--------->
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+        molestiae!
+      </p>
 
-</body>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            adipisci numquam, iure eum cupiditate non. Placeat laudantium
+            aliquid qui eligendi eaque! Sit deleniti quae iure sunt blanditiis
+            quod labore voluptates doloribus dolore quibusdam fuga ipsum officia
+            porro sint nihil laboriosam laudantium temporibus, repudiandae velit
+            cum illum eum, magni, molestias officiis.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            adipisci numquam, iure eum cupiditate non. Placeat laudantium
+            aliquid qui eligendi eaque! Sit deleniti quae iure sunt blanditiis
+            quod labore voluptates doloribus dolore quibusdam fuga ipsum officia
+            porro sint nihil laboriosam laudantium temporibus, repudiandae velit
+            cum illum eum, magni, molestias officiis.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post-Gradation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            adipisci numquam, iure eum cupiditate non. Placeat laudantium
+            aliquid qui eligendi eaque! Sit deleniti quae iure sunt blanditiis
+            quod labore voluptates doloribus dolore quibusdam fuga ipsum officia
+            porro sint nihil laboriosam laudantium temporibus, repudiandae velit
+            cum illum eum, magni, molestias officiis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- Camps ---------- -->
+    <section class="Campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+        maxime.
+      </p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" />
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------- Facilities-------- -->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, odio?
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" />
+          <h3>World class Library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            beatae sequi, repudiandae possimus doloremque quos reiciendis nemo!
+            Aperiam laboriosam, odit veniam autem ab corporis! Labore laboriosam
+            ducimus placeat in explicabo.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" />
+          <h3>Big Play-Ground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            beatae sequi, repudiandae possimus doloremque quos reiciendis nemo!
+            Aperiam laboriosam, odit veniam autem ab corporis! Labore laboriosam
+            ducimus placeat in explicabo.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" />
+          <h3>Healthy food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            beatae sequi, repudiandae possimus doloremque quos reiciendis nemo!
+            Aperiam laboriosam, odit veniam autem ab corporis! Labore laboriosam
+            ducimus placeat in explicabo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Testimonials------------>
+    <section class="testimonials">
+      <h1>What our Student Says</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+        dolores in repudiandae officia saepe magni dicta expedita laboriosam
+        beatae iusto.
+      </p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/user1.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum enim illo perspiciatis, doloremque corrupti in ipsa
+              ipsum nisi optio accusamus.
+            </p>
+            <h3>Angela jolly</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/user2.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum enim illo perspiciatis, doloremque corrupti in ipsa
+              ipsum nisi optio accusamus.
+            </p>
+            <h3>Babulal</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- Callto Action--------- -->
+
+    <section class="cta">
+      <h1>
+        Enroll For Our Various Online courses <br />Anywhere From The World
+      </h1>
+      <a href="" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- ============Footer============== -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis cum
+        maiores quod reiciendis ipsa ab <br>blanditiis quis perspiciatis possimus
+        fuga!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+      </div>
+      <p>Made with <i class="fas fa-heart-o"></i>  by Rishabh</p>
+    </section>
+
+    <!-- <-------javascript for Toggle Menu--------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
